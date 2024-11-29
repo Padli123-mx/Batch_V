@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumpulan Trainee Batch V</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/trainee.css">
+</head>
+<body>
+    <div class="back"><a href="home.html"><button>Back</button></a></div>
+    <div class="container">
+        <div class="slide">
+            <div class="item" style="background-image: url(vebri.png);">
+                <div class="content">
+                    <div class="name">Muhammad Vebriyan</div>
+                    <div class="des">Welcome to the journey</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(kbn.jpg);">
+                <div class="content">
+                    <div class="name">BATCH V</div>
+                    <div class="des">Angkatan ke-5. Berisikan anak umuran 15 tahunan, suka makan rendang, tak suka perdamaian.</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(mulback.png);">
+                <div class="content">
+                    <div class="name">Muhammad Padli</div>
+                    <div class="des">Anak umur 13 tahun didalam tubuh umur 20 tahun, suka makan ayam, ga suka belajar.</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(Picture1.png);">
+                <div class="content">
+                    <div class="name">Dzicky Andrean Yowandra</div>
+                    <div class="des">Anak koncet yang paling cerewot.  Tiada hari kedamaian dalam hidupnya. Walau mukaku sangar, hati tetap hello kitty (kayanya).</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(jones.png);">
+                <div class="content">
+                    <div class="name">Muhammad Joenashri</div>
+                    <div class="des">Cowok kul dari batch v. Cewek dimana-mana. Soal dompet, wueohh...</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(rehan.png);">
+                <div class="content">
+                    <div class="name">Ahmad Raehansah</div>
+                    <div class="des">Anak yang paling anak di bacthV, Hobi ketawa elek-elekan, paling cinta perdamaian</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(topik.png);">
+                <div class="content">
+                    <div class="name">Taufik Dian Syahputra</div>
+                    <div class="des">Top player volly. Atlet PON(dok). Hobi tidur dikelas. Teori boleh kalah, kalau soal lapangan boleh diadu </div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(ardian.png);">
+                <div class="content">
+                    <div class="name">Muhammad Ardian</div>
+                    <div class="des">Sukanya jalan-jalan tapi duitnya kurang, pengen banget ke Bandung</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(sartika.JPG);">
+                <div class="content">
+                    <div class="name">Sartika Hanum Sinurat</div>
+                    <div class="des">Anak pertama dari 3 bersaudara (putri tunggal), tidak sombong dan suka menabung</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(julius.png);">
+                <div class="content">
+                    <div class="name">Julius Herdio Deflito</div>
+                    <div class="des">Seorang Artis (sempat jadi duta tiktok). Si ambis dari batch V. Kalau soal PPT, harga bisa dibicarakan </div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(dimas.png);">
+                <div class="content">
+                    <div class="name">Dimas Aditia Mukti</div>
+                    <div class="des">si paling baik dan pengertian sesama teman di betch V </div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(fuad.png);">
+                <div class="content">
+                    <div class="name">Fuad Hamdi</div>
+                    <div class="des">ga perlu tau siapa dia karna semua orang udah tau </div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(ade.png);">
+                <div class="content">
+                    <div class="name">Ade Wiranto</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, nesciunt. Error consectetur voluptas aliquam nesciunt. </div>
+                    <button>See More</button>
+                </div>
+            </div>
+           
+        </div>
+
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <script>
+        let next = document.querySelector('.next')
+        let prev = document.querySelector('.prev')
+        
+        next.addEventListener('click', function(){
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slide').appendChild(items[0])
+        })
+        
+        prev.addEventListener('click', function(){
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
+        })
+    </script>
+</body>
+</html>  
